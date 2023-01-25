@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,11 @@
 		DE35C9BA25F070A4008C6E99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE35C9B825F070A4008C6E99 /* LaunchScreen.storyboard */; };
 		DE35C9C525F070A5008C6E99 /* ExampleWithInterestingLibrariesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE35C9C425F070A5008C6E99 /* ExampleWithInterestingLibrariesTests.swift */; };
 		DE35C9D025F070A5008C6E99 /* ExampleWithInterestingLibrariesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE35C9CF25F070A5008C6E99 /* ExampleWithInterestingLibrariesUITests.swift */; };
+		DE4274842980E9220003DCE3 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = DE4274832980E9220003DCE3 /* KeychainAccess */; };
+		DE42748C2980EA2E0003DCE3 /* SkeletonView in Frameworks */ = {isa = PBXBuildFile; productRef = DE42748B2980EA2E0003DCE3 /* SkeletonView */; };
+		DE42748F2980EA5C0003DCE3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DE42748E2980EA5C0003DCE3 /* Kingfisher */; };
+		DE4274922980EAE00003DCE3 /* CollectionViewPagingLayout in Frameworks */ = {isa = PBXBuildFile; productRef = DE4274912980EAE00003DCE3 /* CollectionViewPagingLayout */; };
+		DEA57B972980EDDB00872964 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = DEA57B962980EDDB00872964 /* GRDB */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +85,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE42748F2980EA5C0003DCE3 /* Kingfisher in Frameworks */,
+				DE4274842980E9220003DCE3 /* KeychainAccess in Frameworks */,
 				0CE5DB811DFB3A596BB677F2 /* Pods_ExampleWithInterestingLibraries.framework in Frameworks */,
+				DEA57B972980EDDB00872964 /* GRDB in Frameworks */,
+				DE4274922980EAE00003DCE3 /* CollectionViewPagingLayout in Frameworks */,
+				DE42748C2980EA2E0003DCE3 /* SkeletonView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +254,13 @@
 			dependencies = (
 			);
 			name = ExampleWithInterestingLibraries;
+			packageProductDependencies = (
+				DE4274832980E9220003DCE3 /* KeychainAccess */,
+				DE42748B2980EA2E0003DCE3 /* SkeletonView */,
+				DE42748E2980EA5C0003DCE3 /* Kingfisher */,
+				DE4274912980EAE00003DCE3 /* CollectionViewPagingLayout */,
+				DEA57B962980EDDB00872964 /* GRDB */,
+			);
 			productName = ExampleWithInterestingLibraries;
 			productReference = DE35C9AA25F070A3008C6E99 /* ExampleWithInterestingLibraries.app */;
 			productType = "com.apple.product-type.application";
@@ -318,6 +335,13 @@
 				Base,
 			);
 			mainGroup = DE35C9A125F070A2008C6E99;
+			packageReferences = (
+				DE4274822980E9220003DCE3 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				DE42748A2980EA2E0003DCE3 /* XCRemoteSwiftPackageReference "SkeletonView" */,
+				DE42748D2980EA5C0003DCE3 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DE4274902980EAE00003DCE3 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */,
+				DEA57B952980EDDB00872964 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
 			productRefGroup = DE35C9AB25F070A3008C6E99 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -579,7 +603,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -635,7 +659,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -655,6 +679,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ExampleWithInterestingLibraries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -676,6 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ExampleWithInterestingLibraries/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -696,7 +722,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ExampleWithInterestingLibrariesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -719,7 +745,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S5BF5553KY;
 				INFOPLIST_FILE = ExampleWithInterestingLibrariesTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -815,6 +841,77 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE4274822980E9220003DCE3 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
+		DE42748A2980EA2E0003DCE3 /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		DE42748D2980EA5C0003DCE3 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 7.5.0;
+			};
+		};
+		DE4274902980EAE00003DCE3 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/amirdew/CollectionViewPagingLayout.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+		DEA57B952980EDDB00872964 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DE4274832980E9220003DCE3 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE4274822980E9220003DCE3 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		DE42748B2980EA2E0003DCE3 /* SkeletonView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE42748A2980EA2E0003DCE3 /* XCRemoteSwiftPackageReference "SkeletonView" */;
+			productName = SkeletonView;
+		};
+		DE42748E2980EA5C0003DCE3 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE42748D2980EA5C0003DCE3 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DE4274912980EAE00003DCE3 /* CollectionViewPagingLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE4274902980EAE00003DCE3 /* XCRemoteSwiftPackageReference "CollectionViewPagingLayout" */;
+			productName = CollectionViewPagingLayout;
+		};
+		DEA57B962980EDDB00872964 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DEA57B952980EDDB00872964 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DE35C9A225F070A2008C6E99 /* Project object */;
 }
