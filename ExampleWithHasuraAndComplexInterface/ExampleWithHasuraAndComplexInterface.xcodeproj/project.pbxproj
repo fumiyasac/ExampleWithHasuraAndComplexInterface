@@ -18,8 +18,8 @@
 		DE2EC16629C2BDC200C52028 /* ExampleWithHasuraAndComplexInterfaceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2EC16529C2BDC200C52028 /* ExampleWithHasuraAndComplexInterfaceUITestsLaunchTests.swift */; };
 		DE2EC17429C4AA6200C52028 /* NextGrowingTextView in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC17329C4AA6200C52028 /* NextGrowingTextView */; };
 		DE2EC17729C4AA8600C52028 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC17629C4AA8600C52028 /* Toast */; };
-		DE2EC17A29C4AF4300C52028 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC17929C4AF4300C52028 /* Realm */; };
-		DE2EC17C29C4AF4300C52028 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC17B29C4AF4300C52028 /* RealmSwift */; };
+		DE2EC17F29C4B37300C52028 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC17E29C4B37300C52028 /* Realm */; };
+		DE2EC18129C4B37300C52028 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DE2EC18029C4B37300C52028 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,8 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE2EC17C29C4AF4300C52028 /* RealmSwift in Frameworks */,
-				DE2EC17A29C4AF4300C52028 /* Realm in Frameworks */,
+				DE2EC18129C4B37300C52028 /* RealmSwift in Frameworks */,
+				DE2EC17F29C4B37300C52028 /* Realm in Frameworks */,
 				DE2EC17729C4AA8600C52028 /* Toast in Frameworks */,
 				DE2EC17429C4AA6200C52028 /* NextGrowingTextView in Frameworks */,
 			);
@@ -154,8 +154,8 @@
 			packageProductDependencies = (
 				DE2EC17329C4AA6200C52028 /* NextGrowingTextView */,
 				DE2EC17629C4AA8600C52028 /* Toast */,
-				DE2EC17929C4AF4300C52028 /* Realm */,
-				DE2EC17B29C4AF4300C52028 /* RealmSwift */,
+				DE2EC17E29C4B37300C52028 /* Realm */,
+				DE2EC18029C4B37300C52028 /* RealmSwift */,
 			);
 			productName = ExampleWithHasuraAndComplexInterface;
 			productReference = DE2EC13F29C2BDC200C52028 /* ExampleWithHasuraAndComplexInterface.app */;
@@ -232,7 +232,7 @@
 			packageReferences = (
 				DE2EC17229C4AA6200C52028 /* XCRemoteSwiftPackageReference "NextGrowingTextView" */,
 				DE2EC17529C4AA8600C52028 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
-				DE2EC17829C4AF4300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				DE2EC17D29C4B37300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = DE2EC14029C2BDC200C52028 /* Products */;
 			projectDirPath = "";
@@ -641,11 +641,11 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		DE2EC17829C4AF4300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+		DE2EC17D29C4B37300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
-				kind = upToNextMinorVersion;
+				kind = upToNextMajorVersion;
 				minimumVersion = 10.37.0;
 			};
 		};
@@ -662,14 +662,14 @@
 			package = DE2EC17529C4AA8600C52028 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
 			productName = Toast;
 		};
-		DE2EC17929C4AF4300C52028 /* Realm */ = {
+		DE2EC17E29C4B37300C52028 /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE2EC17829C4AF4300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = DE2EC17D29C4B37300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
-		DE2EC17B29C4AF4300C52028 /* RealmSwift */ = {
+		DE2EC18029C4B37300C52028 /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = DE2EC17829C4AF4300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			package = DE2EC17D29C4B37300C52028 /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
