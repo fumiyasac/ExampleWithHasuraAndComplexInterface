@@ -2,7 +2,7 @@
 //  ExampleWithHasuraAndComplexInterfaceTests.swift
 //  ExampleWithHasuraAndComplexInterfaceTests
 //
-//  Created by 酒井文也 on 2023/03/16.
+//  Created by 酒井文也 on 2023/10/18.
 //
 
 import XCTest
